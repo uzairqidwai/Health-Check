@@ -3,7 +3,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 # Config file
-config_file = "commands.config.xml"
+config_file = "commands.xml"
 
 # Check type: 1 for quick, 2 for full
 check_type = sys.argv[1] if len(sys.argv) > 1 else "2"
