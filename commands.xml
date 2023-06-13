@@ -8,7 +8,7 @@
         <!-- Shell command to be executed -->
         <command>python --version</command>
         <!-- Expected output of the command for an exact match. Leave it empty for keyword match -->
-        <expectedOutput>Python 3.8.5</expectedOutput>
+        <expectedOutput>Python 3.6.8</expectedOutput>
         <!-- Check type: 1 for quick, 2 for full -->
         <checkType>1</checkType>
         <!-- Match type: "exact" for exact match, "keyword" for keyword search -->
@@ -18,13 +18,15 @@
     </check>
 
     <!-- Second check example -->
-    <check>
-        <name>Check Available Memory</name>
-        <command>free -m</command>
+    </check>
+        <check>
+        <name>Check for Bash Processes</name>
+        <command>ps</command>
         <expectedOutput></expectedOutput>
-        <checkType>2</checkType>
+        <checkType>1</checkType>
         <matchType>keyword</matchType>
-        <!-- Keywords to look for in the output -->
-        <keywords>Mem, total, free</keywords>
+            <!-- Keywords to look for in the output -->
+        <keywords>bash</keywords>
     </check>
 </checks>
+
